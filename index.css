@@ -3,7 +3,6 @@ html, body
 {
     margin: 0;
     padding: 0;
-    max-width: 1440px;
     font-size: 18px;
     font-family: 'Fraunces', sans-serif;
 }
@@ -123,6 +122,7 @@ html, body
 {
     font-weight: bolder;
     font-size: small;
+    color: black;
     text-decoration: none;
     border-bottom: 10px solid rgb(241, 240, 155);
     border-radius: 100px;
@@ -171,6 +171,7 @@ html, body
 {
     font-weight: bolder;
     font-size: small;
+    color: black;
     border-bottom: 10px solid hsl(9, 72%, 83%);
     border-radius: 100px;
     text-decoration: none;
@@ -214,10 +215,6 @@ html, body
 {
     text-align: center;
 }
-{
-    text-align: center;
-}
-
 
 #section-8
 {
@@ -388,3 +385,34 @@ html, body
 {
     color: white;
 } 
+
+/* MEDIA QUERIES FOR THE MOBILE VERSION */
+@media (min-width: 376px) and (max-width: 500px)
+{
+    html, body
+    {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-family: 'Fraunces', sans-serif;
+    }
+
+    #whole-section
+    {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 500px);
+    }
+
+    #section-1
+    {
+        
+        background-image: url("images/mobile/image-header.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
