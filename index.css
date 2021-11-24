@@ -51,6 +51,11 @@ html, body
     align-self: flex-start;
 }
 
+.hamburger
+{
+    display: none;
+}
+
 #section-1 header ul
 {
     align-self: flex-end;
@@ -386,33 +391,3 @@ html, body
     color: white;
 } 
 
-/* MEDIA QUERIES FOR THE MOBILE VERSION */
-@media (min-width: 376px) and (max-width: 500px)
-{
-    html, body
-    {
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-        font-family: 'Fraunces', sans-serif;
-    }
-
-    #whole-section
-    {
-        margin: 0;
-        padding: 0;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(10, 500px);
-    }
-
-    #section-1
-    {
-        
-        background-image: url("images/mobile/image-header.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-}
