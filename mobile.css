@@ -1,0 +1,379 @@
+/* MEDIA QUERIES FOR THE MOBILE VERSION */
+@media (max-width: 500px)
+{
+    html, body
+    {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-family: 'Fraunces', sans-serif;
+    }
+
+    #whole-section
+    {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+            "a a"
+            "b b"
+            "c c"
+            "d d"
+            "e e"
+            "f f"
+            "g g"
+            "h h"
+            "i j"
+            "k l"
+            "m m";
+    }
+
+    #section-1
+    {
+        grid-area: a;
+        background-image: url("images/mobile/image-header.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #section-1 header
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%;
+        
+    }
+
+    #section-1 header ul
+    {
+        display: none;
+    }
+
+    .hamburger
+    {
+        display: block;
+        background-image: url("images/icon-hamburger.svg");
+        width: 25px;
+        height: 25px;
+        margin-top: 5%;
+    }
+
+    #section-1 h2
+    {
+        text-align: center;
+        margin: auto;
+        color: white;
+        font-size: 50px
+    }
+
+    #section-1 img
+    {
+        display: block;
+        text-align: center;
+        margin: auto;
+        padding-top: 10%;
+        
+    }
+
+    #section-2
+    {
+        grid-area: b;
+        background: white;
+        padding: 20%;
+        color: rgba(27, 48, 48, 0.8);
+        font-weight: bolder;
+    }
+
+    #section-2 h1
+    {
+        text-align: center;
+        font-size: 150%;
+    }
+
+    #section-2 p
+    {
+        text-align: center;
+    }
+
+    #section-2 a
+    {
+        font-weight: bolder;
+        font-size: small;
+        display: inline-block;
+        margin: 20% 20%;
+        color: black;
+        text-decoration: none;
+        border-bottom: 10px solid rgb(241, 240, 155);
+        border-radius: 100px;
+    }
+
+    #section-3
+    {
+        grid-area: c;
+        background-image: url("images/mobile/image-transform.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #section-4
+    {
+        grid-area: d;
+        background-image: url("images/mobile/image-stand-out.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    #section-5
+    {
+        grid-area: e;
+        background: hsl(0, 35%, 94%);
+        padding: 20%;
+        color: rgba(27, 48, 48, 0.8);
+        font-weight: bolder;
+    }
+
+    #section-5 h1
+    {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #section-5 a
+    {
+        font-weight: bolder;
+        font-size: small;
+        display: inline-block;
+        margin: 20% 20%;
+        border-bottom: 10px solid hsl(9, 72%, 83%);
+        border-radius: 100px;
+        text-decoration: none;
+    }
+
+    #section-6
+    {
+        grid-area: f;
+        background-image: url("images/mobile/image-graphic-design.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 25% 25% 25% 25%;
+        color: rgba(27, 48, 48, 0.8);
+        font-weight: bolder;
+    }
+
+    #section-6 h1, #section-6 p
+    {
+        text-align: center;
+    }
+
+    #section-6 h1
+    {
+        margin-top: 140%;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #section-6 p
+    {
+        font-size: 15px;
+    }
+
+    #section-7
+    {
+        grid-area: g;
+        background-image: url("images/mobile/image-photography.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 45% 25% 25%;
+        color: rgba(27, 48, 48, 0.8);
+        font-weight: bolder;
+    }
+
+    #section-7 h1, #section-6 p
+    {
+        text-align: center;
+    }
+
+    #section-7 h1
+    {
+        margin-top: 140%;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #section-7 p
+    {
+        font-size: 15px;
+    }
+
+    #section-8
+    {
+        grid-area: h;
+        background: hsl(0, 35%, 94%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: grey;
+    }
+
+    #section-8 h3
+    {
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    #users
+    {
+        display: flex;
+        margin-bottom: 120px;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    #users div
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+
+    #users div img
+    {
+        border-radius: 100px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #users div p
+    {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #users div .bold
+    {
+        display: block;
+        color: darkslategray;
+        font-weight: bolder;
+        margin: 0;
+    }
+
+
+    #section-9
+    {
+        grid-area: i;
+        background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+    }
+
+
+    #section-10
+    {
+        grid-area: j;
+        background-image: url("images/mobile/image-gallery-orange.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+    }
+
+    #section-11
+    {
+        grid-area: k;
+        background-image: url("images/mobile/image-gallery-cone.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+    }
+
+    #section-12
+    {
+        grid-area: l;
+        background-image: url("images/mobile/image-gallery-sugar-cubes.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+    }
+
+
+    #section-13
+    {
+        grid-area: m;
+        background: hsl(168, 43%, 64%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #section-13 h2
+    {
+        color: rgba(27, 48, 48, 0.8);
+        font-weight: bolder;
+        font-size:xx-large;
+    }
+
+    #section-13-div-1
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #section-13-div-1 li
+    {
+        list-style-type: none;
+        display: inline-block;       
+    }
+
+    #section-13-div-1 li a 
+    {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: rgba(27, 48, 48, 0.8);
+    }
+
+    #section-13-div-1 li a:hover
+    {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: white;
+    }
+
+    #section-13-div-2
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #section-13-div-2 a
+    {
+        display: inline-block;
+    } 
+
+    #section-13-div-2 a:hover
+    {
+        color: white;
+    } 
+
+}
