@@ -1,0 +1,1 @@
+var menuIcon = document.getElementById("menu");
