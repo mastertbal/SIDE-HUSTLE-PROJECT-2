@@ -45,12 +45,33 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 5%;
+        position: relative;
         
     }
 
     #section-1 header ul
     {
         display: none;
+        position: relative;
+        z-index: 1;
+        top: 50%;
+        right: 50%;
+        left: 50%;
+    }
+
+    #section-1 header ul li
+    {
+        list-style-type: none;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+    }
+    
+    #section-1 header ul li a 
+    {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: white;
     }
 
     .hamburger
@@ -60,6 +81,7 @@
         width: 25px;
         height: 25px;
         margin-top: 5%;
+        position: relative;
     }
 
     #section-1 h2
@@ -68,6 +90,7 @@
         margin: auto;
         color: white;
         font-size: 50px
+        position: relative;
     }
 
     #section-1 img
@@ -76,6 +99,7 @@
         text-align: center;
         margin: auto;
         padding-top: 10%;
+        position: relative;
         
     }
 

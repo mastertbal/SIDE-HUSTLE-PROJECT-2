@@ -42,7 +42,6 @@ html, body
     justify-content: space-between;
     padding: 1%;
     margin-bottom: 5%;
-    position: relative;
 }
 
 #section-1 header p
@@ -51,13 +50,12 @@ html, body
     font-weight: bolder;
     font-size: larger;
     align-self: flex-start;
-    position: relative;
+    
 }
 
 .hamburger
 {
     display: none;
-    position: relative;
 }
 
 #section-1 header ul

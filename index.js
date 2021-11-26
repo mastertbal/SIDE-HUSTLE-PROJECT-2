@@ -5,10 +5,9 @@ function()
     var myUl = document.getElementById("list-container");
     if(myUl.style.display == "none") 
     {
+        myUl.style.display = "block";
         myUl.style.backgroundColor = "white";
         myUl.style.padding = "10px";
-        myUl.style.display = "block";
-        myUl.style.zIndex = "1";
     }
     else
     {
